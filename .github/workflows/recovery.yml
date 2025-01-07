@@ -15,8 +15,8 @@ on:
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni -b twrp-10.0-deprecated
   DEVICE: A03
-  DT_LINK: https://github.com/rsuntk/recovery_twrp_a03
-  DT_PATH: device/samsung/a03
+  DT_LINK: https://github.com/DrakulaGonchik/android_device_samsung_a3core
+  DT_PATH: device/samsung/a3core
   TARGET: recoveryimage
   TZ: Asia/manila
 
