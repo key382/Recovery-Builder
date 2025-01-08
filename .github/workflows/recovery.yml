@@ -13,10 +13,10 @@ on:
   workflow_dispatch:
 
 env:
-  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni -b twrp-10.0-deprecated
+  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-12.1
   DEVICE: A03
-  DT_LINK: https://github.com/DrakulaGonchik/android_device_samsung_a3core
-  DT_PATH: device/samsung/a3core
+  DT_LINK: https://github.com/twrpdtgen/android_device_samsung_a03
+  DT_PATH: device/samsung/a03
   TARGET: recoveryimage
   TZ: Asia/manila
 
@@ -63,6 +63,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
           tag_name: TWRP_10.0
-          name: TWRP-A03M
+          name: TWRP-A03fm
           files: | 
             work/out/target/product/A03/recovery.img
